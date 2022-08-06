@@ -1,6 +1,5 @@
-import re
-from urllib import response
 import requests
+from datetime import datetime
 
 fttb_data = {
   "Grabouw": "41.23.75.105",
@@ -14,11 +13,17 @@ fttb_data = {
   "Paarl": "196.214.43.137",
   "Houtbay": "41.23.92.249"
 }
-fttb_pings = {}
+fttb_pings = list()
 def main():
   for branch in fttb_data:
-    response = requests.get(url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count=1')
-    fttb_pings[branch] = response.json()
+    count = 1
+    response = requests.get(url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count={count}')
+    fttb_pings.append({
+      branch: {
+        "result": response.json(),
+        "count": count,
+        "datetime": datetime.now()
+        }})
   print(fttb_pings)
 
 if __name__ == "__main__":

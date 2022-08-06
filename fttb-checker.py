@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime
+import json
 
 fttb_data = {
   "Grabouw": "41.23.75.105",
@@ -22,9 +23,9 @@ def main():
       branch: {
         "result": response.json(),
         "count": count,
-        "datetime": datetime.now()
+        "datetime": datetime.now().isoformat()
         }})
-  print(fttb_pings)
+  print(json.dumps(fttb_pings))
 
 if __name__ == "__main__":
   main()

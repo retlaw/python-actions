@@ -39,7 +39,7 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script
-        run: python .github/workflows/fttb-checker.py
+        run: python fttb-checker.py
       
       # Runs a single command using the runners shell
       #- name: Run a one-line script

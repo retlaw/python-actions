@@ -40,7 +40,7 @@ jobs:
           
       - name: execute py script
         env:
-          python-actions-env: ${{ secrets.SUPER_SECRET }}
+          SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
         run: python fttb-checker.py
       
       # Runs a single command using the runners shell

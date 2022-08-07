@@ -31,7 +31,10 @@ def main():
             }})
     print(json.dumps(fttb_pings))
     secret = os.environ["SOME_SECRET"]
-    print(f'the secret is {secret}')
+    if secret == '1234':
+        print(f'the secret is {secret} and correct')
+    else:
+        print('the secret is not correct')
 
 
 if __name__ == "__main__":

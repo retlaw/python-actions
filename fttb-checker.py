@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-import json
+import json, os
 
 fttb_data = {
   "Grabouw": "41.23.75.105",
@@ -26,6 +26,7 @@ def main():
         "datetime": datetime.now().isoformat()
         }})
   print(json.dumps(fttb_pings))
+  print(os.environ.get('SUPER_SECRET'))
 
 if __name__ == "__main__":
   main()

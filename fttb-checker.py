@@ -30,7 +30,7 @@ def main():
                 "datetime": datetime.now().isoformat()
             }})
     print(json.dumps(fttb_pings))
-    secret = os.environ.get('SUPER_SECRET')
+    secret = os.environ('SOME_SECRET')
     print(f'the secret is {secret}')
 
 

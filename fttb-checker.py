@@ -23,13 +23,13 @@ def main():
         count = 1
         response = requests.get(
             url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count={count}')
-        fttb_pings.append({
+        fttb_pings.append(
             {
                 "Branch": branch,
                 "result": response.json(),
                 "count": count,
                 "datetime": datetime.now().isoformat()
-            }})
+            })
     print(json.dumps(fttb_pings))
     secret = os.environ["SOME_SECRET"]
     if secret == '1234':

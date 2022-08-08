@@ -24,7 +24,8 @@ def main():
         response = requests.get(
             url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count={count}')
         fttb_pings.append({
-            branch: {
+            {
+                "Branch": branch,
                 "result": response.json(),
                 "count": count,
                 "datetime": datetime.now().isoformat()

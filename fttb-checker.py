@@ -5,7 +5,7 @@ import os
 
 
 fttb_data = {
-    "Grabouw": "41.23.75.105",
+	"Grabouw": "41.23.75.105",
     "Long Street": "196.213.32.201",
     "Vredendal": "41.23.143.57",
     "Ottery": "41.23.103.65",
@@ -14,7 +14,7 @@ fttb_data = {
     "Vredenburg": "41.23.102.241",
     "Moorreesburg": "41.23.88.129",
     "Paarl": "196.214.43.137",
-    "Houtbay": "41.23.92.249",
+	"Houtbay": "41.23.92.249",
 	"Cape Town City": "196.213.34.97",
 	"N1 City": "196.213.52.201",
 	"Neelsie": "196.213.52.57",

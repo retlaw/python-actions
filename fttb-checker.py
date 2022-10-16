@@ -37,6 +37,7 @@ fttb_data = {
     "Malmesbury": "41.23.102.65",
     "Khayelitsha": "41.23.92.121",
     "Greenpoint": "41.23.102.97",
+    "TableBayMall": "196.213.222.81",
     "Myhouse": "41.23.101.101"
 }
 

@@ -51,7 +51,7 @@ fttb_data = {
     "Watergate": "196.214.159.113",
     "Tokai": "196.214.144.81",
     "Vineyard": "196.214.148.145",
-    "Villiersdorp": "41.23.103.8",
+    "Villiersdorp": "41.23.103.9",
     "LongBeachMall": "196.214.63.121",
     "Junxion Mall": "41.23.74.217",
     "Ceres": "41.23.74.161",

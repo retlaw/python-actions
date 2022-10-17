@@ -70,6 +70,7 @@ def main():
         fttb_pings.append(
             {
                 "Branch": branch,
+                "IP": fttb_data[branch],
                 "result": response.json(),
                 "count": count,
                 "datetime": datetime.now().isoformat()

@@ -47,7 +47,6 @@ fttb_data = {
     "Somerset Mall": "196.213.55.233",
     "Kenilworth": "196.213.53.25",
     "Rondebosch": "196.214.137.185",
-    "Bredasdorp": "196.213.52.42",
     "Watergate": "196.214.159.113",
     "Tokai": "196.214.144.81",
     "Vineyard": "196.214.148.145",

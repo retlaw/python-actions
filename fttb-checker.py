@@ -60,6 +60,7 @@ fttb_data = {
 }
 
 fttb_pings = list()
+fttb_pings_failures = list()
 
 
 def main():
@@ -67,6 +68,7 @@ def main():
         count = 1
         response = requests.get(
             url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count={count}')
+        # print("result" in response.json())
         fttb_pings.append(
             {
                 "Branch": branch,
@@ -75,12 +77,23 @@ def main():
                 "count": count,
                 "datetime": datetime.now().isoformat()
             })
-    print(json.dumps(fttb_pings))
-    secret = os.environ["SOME_SECRET"]
-    if secret == '1234':
-        print(f'the secret is {secret} and correct')
-    else:
-        print('the secret is not correct')
+        if "result" in response.json():
+            fttb_pings_failures.append(
+                {
+                    "Branch": branch,
+                    "IP": fttb_data[branch],
+                    "result": response.json(),
+                    "count": count,
+                    "datetime": datetime.now().isoformat()
+                })
+
+    # print(json.dumps(fttb_pings))
+    print(json.dumps(fttb_pings_failures))
+    # secret = os.environ["SOME_SECRET"]
+    # if secret == '1234':
+    #     print(f'the secret is {secret} and correct')
+    # else:
+    #     print('the secret is not correct')
 
 
 if __name__ == "__main__":

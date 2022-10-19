@@ -72,7 +72,7 @@ def main():
             {
                 "Branch": branch,
                 "IP": fttb_data[branch],
-                "result": response.json(),
+                "response": response.json(),
                 "count": count,
                 "datetime": datetime.now().isoformat()
             })
@@ -81,7 +81,7 @@ def main():
                 {
                     "Branch": branch,
                     "IP": fttb_data[branch],
-                    "result": response.json(),
+                    "response": response.json(),
                     "count": count,
                     "datetime": datetime.now().isoformat()
                 })

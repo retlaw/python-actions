@@ -66,7 +66,7 @@ def main():
     for branch in fttb_data:
         count = 1
         response = requests.get(
-            url=f'http://13.244.137.122/?ip={fttb_data[branch]}&count={count}')
+            url=f'http://13.244.243.42/?ip={fttb_data[branch]}&count={count}')
         # print("result" in response.json())
         fttb_pings.append(
             {

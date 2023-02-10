@@ -5,6 +5,7 @@ import os
 
 
 fttb_data = {
+    "Riversdale": "196.214.168.129",
     "Grabouw": "41.23.75.105",
     "Long Street": "196.213.32.201",
     "Vredendal": "41.23.143.57",

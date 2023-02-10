@@ -5,7 +5,7 @@ import os
 
 
 fttb_data = {
-    "Woodstock": "196.214.169.18",
+    "Woodstock": "196.214.169.17",
     "Mosselbaai": "196.214.167.73",
     "Vangate": "196.214.166.153",
     "Zevenwagcht": "196.214.167.153",

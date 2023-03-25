@@ -95,7 +95,7 @@ def main():
 
     # print(json.dumps(fttb_pings))
     print(json.dumps(fttb_pings_failures))
-    # secret = os.environ["SOME_SECRET"]
+    secret = os.environ["SOME_SECRET"]
     if secret == '1234':
         print(f'the secret is {secret} and correct')
     else:

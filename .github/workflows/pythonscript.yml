@@ -1,11 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
-name: FTTB-CHECKER
+#name: FTTB-CHECKER
 
 # Controls when the workflow will run
-on:
-  schedule:
-    - cron: '0 */2 * * *'
+#on:
+  #schedule:
+    #- cron: '0 */2 * * *'
 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   #push:
@@ -14,34 +14,34 @@ on:
   #  branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  #workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+#jobs:
   # This workflow contains a single job called "build"
-  build:
+  #build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    #steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      #- uses: actions/checkout@v3
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' # install the python version needed
+      #- name: setup python
+        #uses: actions/setup-python@v4
+        #with:
+          #python-version: '3.10' # install the python version needed
       
-      - name: install python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+      #- name: install python packages
+        #run: |
+          #python -m pip install --upgrade pip
+          #pip install -r requirements.txt
           
-      - name: execute py script
-        env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python fttb-checker.py
+      #- name: execute py script
+        #env:
+          #SOME_SECRET: ${{ secrets.SOME_SECRET }}
+        #run: python fttb-checker.py
       
       # Runs a single command using the runners shell
       #- name: Run a one-line script
